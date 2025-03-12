@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+h2{
+    font-size: 2rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding:1rem 0rem 1rem 0rem;
+}
+.iconos{
+    font-size: 3rem;
+}
+ul li{
+    font-size: 2rem;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #003366 ;
+}
+.main-icon{
+    color: white;
+}
+.contenedor_descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.foto_perfil{
+    padding-top: 1rem;
+    width: 50%;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+.descripcion{
+    width: 90%;
+    margin: auto;
+    padding:1rem 0rem 1rem 0rem;
+}
+.habilidades, .proyectos{
+    width: 90%;
+    margin: auto;
+}
+.habilidades h2, .proyectos h2{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+.iconos_habilidades{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem 0rem 1rem 0rem;
+    box-shadow: 0px 1px 10px -9px #003366;
+
+}
