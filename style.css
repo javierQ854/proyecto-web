@@ -4,72 +4,97 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-color: #001122;
+    color: white;
 }
-h2{
-    font-size: 2rem;
+img{
+    width: 50%;
+    border-radius: 50%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.foto_descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+p{
+    text-align: left;
+    width: 90%;
+    margin: auto;
 }
 ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    padding:1rem 0rem 1rem 0rem;
-}
-.iconos{
-    font-size: 3rem;
-}
-ul li{
-    font-size: 2rem;
-}
-.container{
-    max-width: 1400px;
+    width: 90%;
     margin: auto;
 }
-.navegacion{
+.habilidades{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #003366 ;
+    flex-direction: column;
 }
-.main-icon{
-    color: white;
+.habilidades h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
-.contenedor_descripcion{
+.iconos_habilidades{
+    min-width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-.foto_perfil{
-    padding-top: 1rem;
-    width: 50%;
-    border-radius: 1rem 1rem 1rem 1rem;
-}
-.descripcion{
-    width: 90%;
-    margin: auto;
-    padding:1rem 0rem 1rem 0rem;
-}
-.habilidades, .proyectos{
-    width: 90%;
-    margin: auto;
-}
-.habilidades h2, .proyectos h2{
-    background-color: #003366;
-    color: white;
-    text-align: center;
-}
-
-.iconos_habilidades{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    box-shadow: 0px 1px 10px -5px ;
     padding: 1rem 0rem 1rem 0rem;
-    box-shadow: 0px 1px 10px -9px #003366;
+}
+.iconos_habilidades .iconos{
+    font-size: 2rem;
+}
+span{
+    border-right: 2px solid white;
+    width: 0;
+    animation: blink 0.5s infinite step-end alternate, escritura 2s steps(30) infinite;
+    overflow: hidden;
+}
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes escritura {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 37ch;
+    }
+}
 
+@media(min-width: 720px){
+    .foto_descripcion{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        gap: 2rem;
+    }
+    img{
+        width: 15%;
+        border-radius: 50%;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+}
+@media(min-width: 1024px){
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 90%;
+        margin: auto;
+    }
 }
